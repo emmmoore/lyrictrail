@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Lyric Trail</title>
+
+        <meta charset="UTF-8" />
+        <meta name="author" content="Elanor Moore & Adhish Rajan" />
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="header">
+            <h2>Welcome [name]! It's time to embark on the trail.</h2>
+        </div>
+        <div class="gameplay">
+            <p>
+                To survive, correctly guess lyrics from your top songs. Choose
+                from a selection of your top songs to start:
+            </p>
+
+            <div class="choices">
+                <ol>
+                    <li><button onclick="select(1)">[Song 1]</button></li>
+                    <li><button onclick="select(2)">[Song 2]</button></li>
+                    <li><button onclick="select(3)">[Song 3]</button></li>
+                </ol>
+            </div>
+            <div class="horizontal-flex">
+                <p>What is your choice? _</p>
+                <div class="lives">
+                    <img
+                        src="images/heart.jpeg"
+                        class="heart"
+                        id="heart1"
+                    /><img
+                        src="images/heart.jpeg"
+                        class="heart"
+                        id="heart2"
+                    /><img src="images/heart.jpeg" class="heart" id="heart3" />
+                </div>
+            </div>
+        </div>
+
+        <div class="squiggle"><img src="images/squiggle.jpeg" /></div>
+        <div class="back"><a href="main-menu.html">Press 'b' or click here to go back</a></div>
+    </body>
+</html>
