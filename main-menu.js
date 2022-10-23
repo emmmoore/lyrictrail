@@ -1,6 +1,15 @@
-function select(number) {}
-
-function b() {}
+function select(number) {
+    switch (num) {
+        case 1:
+            window.location.href = "start.html";
+            break;
+        case 2:
+            window.location.href = "instructions.html";
+            break;
+        case 3:
+            window.location.href = "top-songs.html";
+    }
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     "use strict";
@@ -11,13 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const num = charList.indexOf(key);
         switch (num) {
-            case -1:
-                console.log("irrelevant");
-                return;
             case 0:
-                b();
-                console.log("going back");
-                break;
+                return;
             default:
                 select(num);
                 console.log("selecting with num " + num);
